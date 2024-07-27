@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPEX Mobile - İnteraktif Teknoloji</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffdd00, #ffa200);
+            color: #333;
+            overflow-x: hidden;
+            height: 100vh;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #interactive-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+ 	}
+
+        .upexlogo {
+            max-width: 650px;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .button2 {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #333, #555);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button2 img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .button3 {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #333, #555);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button3 img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+
+        .button {
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #333, #555);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #555, #777);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+
+        .social-media {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #555;
+            transform: translateY(-3px);
+        }
+
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="interactive-bg"></div>
+    <div class="container">
+        <img src="file:///C:/Users/PC/Downloads/Logo.svg" alt="UPEX Mobile Logo" class="upexlogo">
+        <p>Telefon parçaları ve Teknolojik aksesuarlar için tek adres. Geniş ürün yelpazemiz, hızlı teslimatımızla hizmetinizdeyiz. Uygulamayı indirin ve ihtiyaçlarınızı anında karşılayın.</p>
+        <div class="buttons">
+            <a href="https://apps.apple.com/tr/app/upexmobile/id6478404265?l=tr" class="button3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store">
+                App Store'dan İndir
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.upextech.upexmobile&hl=en_US" class="button3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Play_2022_icon.svg" alt="Google Play">
+                Google Play'den İndir
+            </a>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            </a>
+            <a href="https://wa.me/905336610399" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('interactive-bg').appendChild(renderer.domElement);
+
+        const geometry = new THREE.SphereGeometry(28, 64, 48);
+        geometry.scale(-1, 1, 1);
+
+        const material = new THREE.MeshBasicMaterial({
+            color: 0xffa500,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.2
+        });
+
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particlesCount = 1000;
+        const posArray = new Float32Array(particlesCount * 3);
+
+        for(let i = 0; i < particlesCount * 3; i += 3) {
+            const radius = 7.5;
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            
+            posArray[i] = radius * Math.sin(phi) * Math.cos(theta);
+            posArray[i + 1] = radius * Math.sin(phi) * Math.sin(theta);
+            posArray[i + 2] = radius * Math.cos(phi);
+        }
+
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const particlesMaterial = new THREE.PointsMaterial({
+            size: 0.02,
+            color: 0xffffff,
+            transparent: true,
+            opacity: 0.8
+        });
+
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        sphere.add(particlesMesh);
+
+        camera.position.z = 12;
+
+        let mouseX = 0, mouseY = 0;
+        let targetRotationX = 0;
+        let targetRotationY = 0;
+
+        function onDocumentMouseMove(event) {
+            mouseX = (event.clientX - window.innerWidth / 2) / 250;
+            mouseY = (event.clientY - window.innerHeight / 2) / 250;
+        }
+
+        document.addEventListener('mousemove', onDocumentMouseMove, false);
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            targetRotationY += (mouseX - targetRotationY) * 0.008;
+            targetRotationX += (mouseY - targetRotationX) * 0.008;
+
+            sphere.rotation.x += (targetRotationX - sphere.rotation.x) * 0.03;
+            sphere.rotation.y += (targetRotationY - sphere.rotation.y) * 0.03;
+
+            particlesMesh.rotation.y += 0.0005;
+            particlesMesh.rotation.x += 0.0003;
+
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>
